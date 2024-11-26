@@ -16,3 +16,59 @@
     flex-basis: 100%;
     flex-grow: 1;
 }
+
+/* --- main section intro --- */
+.img-custom {
+    width: 100%;
+    max-height: 184px;
+    object-fit: cover;
+}
+
+.box-info-title {
+    border-radius: 16px;
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%) translateY(-40%);
+    width: -moz-fit-content;
+    z-index: 2;
+    background-color: #d9ff66;
+}
+
+.box-curved-divider {
+    background-color: white;
+    border-radius: 100% 100% 0 0;
+    bottom: 0;
+    height: 32px;
+    left: 0;
+    position: absolute;
+    transform: translateY(5px);
+    width: 100%;
+    z-index: 1;
+}
+
+/* custom animatio comapny */
+.logos-animation {
+    display: inline-flex;
+    overflow-x: hidden;
+    padding: 0 16px;
+    width: 100%;
+}
+
+.logos-animation-container {
+    animation: infinite-scroll 20s infinite;
+    animation-timing-function: linear;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+}
+
+@keyframes infinite-scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
